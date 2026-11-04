@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=13">
+<link rel="stylesheet" href="styles.css?v=18">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -138,20 +138,62 @@
 
     <div class="bento">
       <article class="card card-xl card-grad reveal">
-        <div class="card-ic ic-white"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M3 9a3 3 0 006 0 3 3 0 006 0 3 3 0 006 0"/></svg></div>
-        <h3>Uma loja com a sua cara</h3>
-        <p>Logo, cores, banners e domínio próprio. Seu cliente compra na sua marca, não numa vitrine genérica.</p>
-        <div class="swatch-row" aria-hidden="true"><i style="--c:#2B2EE6"></i><i style="--c:#7422F1"></i><i style="--c:#0E9F6E"></i><i style="--c:#F97316"></i><i style="--c:#E11D74"></i></div>
+        <div class="brand-ui" id="brandUi" style="--b:#2B2EE6" aria-label="Exemplo de loja personalizada">
+          <div class="bu-bar"><i></i><i></i><i></i><span>bolsasdamaria.com.br</span></div>
+          <div class="bu-head">
+            <b class="bu-logo"><span class="bu-mark">M</span>Bolsas da Maria</b>
+            <nav><span>Novidades</span><span>Bolsas</span><span>Acessórios</span></nav>
+            <span class="bu-cart"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg><em>2</em></span>
+          </div>
+          <div class="bu-body">
+            <div class="bu-photo">
+              <img src="assets/photos/handmade-ladies-leather-handbag-designed.webp" width="1024" height="683" alt="Bolsa de lona azul com alças de couro" loading="lazy">
+              <span class="bu-tag">Novo</span>
+            </div>
+            <div class="bu-info">
+              <p class="bu-cat">Bolsas · Coleção Verão</p>
+              <p class="bu-name">Bolsa de lona com alça de couro</p>
+              <p class="bu-stars">★★★★★ <span>48 avaliações</span></p>
+              <p class="bu-price">R$ 189,90</p>
+              <p class="bu-pix">R$ 180,40 no Pix</p>
+              <div class="bu-sizes"><span class="on">Azul</span><span>Preta</span><span>Caramelo</span></div>
+              <span class="bu-btn">Comprar agora</span>
+              <p class="bu-ship">Frete grátis acima de R$ 199</p>
+            </div>
+          </div>
+        </div>
+        <div class="xl-text">
+          <h3>Uma loja com a sua cara</h3>
+          <p>Logo, cores, banners e domínio próprio. Seu cliente compra na sua marca, não numa vitrine genérica.</p>
+          <div class="swatch-row" role="radiogroup" aria-label="Experimente a cor da marca">
+            <button type="button" role="radio" aria-checked="true" style="--c:#2B2EE6" data-bc="#2B2EE6" aria-label="Azul"></button>
+            <button type="button" role="radio" aria-checked="false" style="--c:#7422F1" data-bc="#7422F1" aria-label="Roxo"></button>
+            <button type="button" role="radio" aria-checked="false" style="--c:#0E9F6E" data-bc="#0E9F6E" aria-label="Verde"></button>
+            <button type="button" role="radio" aria-checked="false" style="--c:#F97316" data-bc="#EA580C" aria-label="Laranja"></button>
+            <button type="button" role="radio" aria-checked="false" style="--c:#E11D74" data-bc="#E11D74" aria-label="Rosa"></button>
+            <span class="swatch-hint">Toque numa cor</span>
+          </div>
+        </div>
       </article>
 
       <article class="card card-tall reveal" style="--d:1">
         <div class="card-ic ic-green"><svg viewBox="0 0 24 24"><path d="M12 3l9 9-9 9-9-9z"/><path d="M8.5 12h7"/></svg></div>
         <h3>Pix, cartão e boleto</h3>
         <p>Checkout em uma página. Pix aprovado na hora, cartão parcelado e boleto para quem prefere.</p>
-        <div class="mini-pay" aria-hidden="true">
-          <div class="mp-row"><span>Pix</span><b>aprovado</b></div>
-          <div class="mp-row"><span>Cartão 6x</span><b>aprovado</b></div>
-          <div class="mp-row"><span>Boleto</span><b class="wait">aguardando</b></div>
+        <div class="co-ui" aria-hidden="true">
+          <div class="co-head"><b>Checkout</b><span>Pedido #1042 · 2 itens</span></div>
+          <div class="co-tabs"><span class="on">Pix</span><span>Cartão</span><span>Boleto</span></div>
+          <div class="co-pix">
+            <div class="co-qr"></div>
+            <div class="co-pix-info">
+              <small>Total no Pix (5% off)</small>
+              <strong>R$ 360,81</strong>
+              <span class="co-timer">Expira em 29:41</span>
+              <span class="co-copy">Copiar código Pix</span>
+            </div>
+          </div>
+          <div class="co-card"><span class="co-brand">VISA</span><span>•••• 4821</span><em>ou 6x de R$ 63,30 sem juros</em></div>
+          <div class="co-ok"><span class="co-ok-ic"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Pagamento aprovado</b><small>Pedido confirmado e estoque atualizado</small></div><em>agora</em></div>
         </div>
       </article>
 
@@ -458,6 +500,6 @@
 
 <a class="wa-float" data-cta-talk href="#comecar" aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.7a10.7 10.7 0 01-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1116 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 01-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.4 6.4 0 001.3 3.4 14.7 14.7 0 005.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 002.2-1.6 2.8 2.8 0 00.2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg></a>
 
-<script src="app.js?v=4" defer></script>
+<script src="app.js?v=5" defer></script>
 </body>
 </html>

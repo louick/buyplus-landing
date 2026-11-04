@@ -164,6 +164,17 @@ const CONTATO = {
     if (d.open) $$('.faq details').forEach(o => { if (o !== d) o.open = false; });
   }));
 
+  /* cartão "loja com a sua cara": as cores mudam a loja de exemplo */
+  const bu = $('#brandUi');
+  $$('[data-bc]').forEach(b => b.addEventListener('click', () => {
+    $$('[data-bc]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
+    bu.style.setProperty('--b', b.dataset.bc);
+  }));
+  if (!reduce) {
+    let k = 0, auto = setInterval(() => { const bs = $$('[data-bc]'); k = (k + 1) % bs.length; bs[k].click(); }, 2600);
+    $$('[data-bc]').forEach(b => b.addEventListener('pointerdown', () => clearInterval(auto), { once: true }));
+  }
+
   $('#year').textContent = new Date().getFullYear();
   render();
 })();
