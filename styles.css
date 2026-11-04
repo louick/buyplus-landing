@@ -643,3 +643,18 @@ input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.25); }
 .co-ok b { display: block; font-size: 14px; color: #065F46; }
 .co-ok small { font-size: 12px; color: #047857; }
 .co-ok em { margin-left: auto; font-style: normal; font-size: 12px; font-weight: 600; color: #047857; }
+
+/* ============ gestão do lojista ============ */
+.ops { background: var(--bg-2); }
+.ops-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.ops-item { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); padding: 28px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .3s; }
+.ops-item:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: #D8D4FF; }
+.ops-item:hover .card-ic { transform: rotate(-8deg) scale(1.08); }
+.ops-item p { color: var(--ink-2); font-size: 16px; line-height: 1.55; }
+.ops-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; }
+.ops-tags li { font-size: 12.5px; font-weight: 600; color: var(--violet); background: #F2EEFF; padding: 4px 10px; border-radius: 999px; }
+.ops-cta { margin-top: 40px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 22px 28px; border-radius: var(--r-lg); background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.ops-cta p { font-size: 17px; color: var(--ink-2); }
+.ops-cta b { color: var(--ink); }
+@media (max-width: 1080px) { .ops-grid { grid-template-columns: 1fr 1fr; } .ops-item:last-child { grid-column: span 2; } .nav-links a[href="#gestao"] { display: none; } }
+@media (max-width: 720px) { .ops-grid { grid-template-columns: 1fr; } .ops-item:last-child { grid-column: auto; } .ops-item { padding: 22px; } .ops-cta { padding: 20px; } .ops-cta .btn { width: 100%; } }
