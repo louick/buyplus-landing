@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buy+ · Sua loja online completa</title>
+<meta name="description" content="Buy+ é a plataforma de e-commerce completa: loja com a sua marca, checkout com Pix, cartão e boleto, estoque, cupons, frete e painel de vendas.">
+<meta name="theme-color" content="#2B2EE6">
+<meta property="og:title" content="Buy+ · Venda mais com a sua própria loja online">
+<meta property="og:description" content="Loja com a sua marca, Pix, cartão, boleto, estoque, cupons e painel. Tudo num só lugar.">
+<meta property="og:image" content="assets/logo-lg.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=10">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#topo" aria-label="Buy+, início"><img src="assets/logo.png" width="659" height="240" alt="Buy+"></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#recursos">Recursos</a>
+      <a href="#segmentos">Segmentos</a>
+      <a href="#demo">Teste agora</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#painel">Painel</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-grad btn-sm nav-cta" data-cta href="#comecar">Criar minha loja</a>
+    <button class="nav-burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#recursos">Recursos</a>
+    <a href="#segmentos">Segmentos</a>
+    <a href="#demo">Teste agora</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#painel">Painel</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a class="btn btn-grad" data-cta href="#comecar">Criar minha loja</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <div class="grid-fade"></div>
+  </div>
+
+  <div class="container hero-copy">
+    <p class="pill reveal"><span class="pill-dot"></span>E-commerce para todos os segmentos</p>
+    <h1 class="reveal" style="--d:1">Venda mais com a <span class="grad-text">sua própria loja</span> online</h1>
+    <p class="hero-sub reveal" style="--d:2">Moda, beleza, alimentos, eletrônicos, pet, casa e muito mais. Catálogo, checkout com Pix, cartão e boleto, estoque, cupons e painel de vendas, com o nome e as cores da sua marca.</p>
+    <div class="hero-cta reveal" style="--d:3">
+      <a class="btn btn-grad btn-lg" data-cta href="#comecar">Criar minha loja <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost btn-lg" href="#demo">Testar a demonstração</a>
+    </div>
+    <ul class="hero-checks reveal" style="--d:4">
+      <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Sem precisar programar</li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Pix com aprovação na hora</li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Suporte em português</li>
+    </ul>
+  </div>
+
+  <!-- Mockups -->
+  <div class="container devices" id="devices">
+    <div class="tilt" id="tilt">
+      <div class="laptop reveal-up" style="--d:3">
+        <div class="laptop-screen">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="url"><span data-bind="slug">sualoja</span>.buymais.com.br</span></div>
+          <div class="shop" style="--brand:#2B2EE6" id="shop">
+            <div class="shop-head">
+              <strong data-bind="name">Sua Loja</strong>
+              <span class="shop-search">Buscar produtos…</span>
+              <span class="shop-cart"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg><b class="cart-n">0</b></span>
+            </div>
+            <div class="shop-banner">
+              <div>
+                <p class="shop-kicker">Nova coleção</p>
+                <p class="shop-title">Peças que contam a sua história</p>
+                <span class="shop-btn">Ver produtos</span>
+              </div>
+              <img id="bannerImg" src="assets/photos/handmade-ladies-leather-handbag-designed.webp" width="1024" height="683" alt="Bolsa azul de lona carregada por uma pessoa">
+            </div>
+            <div class="shop-grid" id="shopGrid"></div>
+          </div>
+        </div>
+        <div class="laptop-base"></div>
+      </div>
+
+      <div class="phone phone-hero reveal-up" style="--d:4">
+        <div class="phone-notch"></div>
+        <div class="phone-screen checkout">
+          <p class="ph-title">Finalizar compra</p>
+          <div class="ph-item">
+            <img id="phImg" src="assets/photos/denim-jacket-designed-arthur-mcgee.webp" width="877" height="1024" alt="Jaqueta jeans">
+            <div><b id="phName">Jaqueta jeans manga curta</b><span id="phPrice">R$ 229,90</span></div>
+          </div>
+          <p class="ph-label">Forma de pagamento</p>
+          <div class="ph-pay">
+            <span class="on">Pix</span><span>Cartão</span><span>Boleto</span>
+          </div>
+          <div class="ph-qr" aria-hidden="true"></div>
+          <p class="ph-total">Total no Pix <b id="phPix">R$ 218,41</b></p>
+          <span class="ph-btn">Copiar código Pix</span>
+        </div>
+      </div>
+
+      <div class="toast t1" aria-hidden="true"><span class="ic ic-green"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Pix aprovado</b><small>Pedido #1042 · agora</small></div></div>
+      <div class="toast t2" aria-hidden="true"><span class="ic ic-violet"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg></span><div><b>Novo pedido</b><small>Mariana C. · Belém, PA</small></div></div>
+      <div class="toast t3" aria-hidden="true"><span class="ic ic-blue"><svg viewBox="0 0 24 24"><path d="M4 7l8-4 8 4v10l-8 4-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></span><div><b>Estoque atualizado</b><small>11 unidades restantes</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-label="Recursos incluídos">
+  <div class="marquee-track">
+    <span>Pix</span><span>Cartão em até 12x</span><span>Boleto</span><span>Cupons</span><span>Estoque automático</span><span>Domínio próprio</span><span>Frete por CEP</span><span>Retirada na loja</span><span>Carrinho abandonado</span><span>Avisos no WhatsApp</span><span>Painel de vendas</span><span>Google e Instagram</span>
+    <span aria-hidden="true">Pix</span><span aria-hidden="true">Cartão em até 12x</span><span aria-hidden="true">Boleto</span><span aria-hidden="true">Cupons</span><span aria-hidden="true">Estoque automático</span><span aria-hidden="true">Domínio próprio</span><span aria-hidden="true">Frete por CEP</span><span aria-hidden="true">Retirada na loja</span><span aria-hidden="true">Carrinho abandonado</span><span aria-hidden="true">Avisos no WhatsApp</span><span aria-hidden="true">Painel de vendas</span><span aria-hidden="true">Google e Instagram</span>
+  </div>
+</div>
+
+<!-- ================= RECURSOS (bento) ================= -->
+<section class="section" id="recursos">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="pill pill-soft reveal">Recursos</p>
+      <h2 class="reveal" style="--d:1">Tudo que a sua loja precisa para <span class="grad-text">vender todo dia</span></h2>
+      <p class="sec-sub reveal" style="--d:2">Sem plugin, sem gambiarra, sem colcha de retalhos. A Buy+ já vem completa.</p>
+    </div>
+
+    <div class="bento">
+      <article class="card card-xl card-grad reveal">
+        <div class="card-ic ic-white"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M3 9a3 3 0 006 0 3 3 0 006 0 3 3 0 006 0"/></svg></div>
+        <h3>Uma loja com a sua cara</h3>
+        <p>Logo, cores, banners e domínio próprio. Seu cliente compra na sua marca, não numa vitrine genérica.</p>
+        <div class="swatch-row" aria-hidden="true"><i style="--c:#2B2EE6"></i><i style="--c:#7422F1"></i><i style="--c:#0E9F6E"></i><i style="--c:#F97316"></i><i style="--c:#E11D74"></i></div>
+      </article>
+
+      <article class="card card-tall reveal" style="--d:1">
+        <div class="card-ic ic-green"><svg viewBox="0 0 24 24"><path d="M12 3l9 9-9 9-9-9z"/><path d="M8.5 12h7"/></svg></div>
+        <h3>Pix, cartão e boleto</h3>
+        <p>Checkout em uma página. Pix aprovado na hora, cartão parcelado e boleto para quem prefere.</p>
+        <div class="mini-pay" aria-hidden="true">
+          <div class="mp-row"><span>Pix</span><b>aprovado</b></div>
+          <div class="mp-row"><span>Cartão 6x</span><b>aprovado</b></div>
+          <div class="mp-row"><span>Boleto</span><b class="wait">aguardando</b></div>
+        </div>
+      </article>
+
+      <article class="card reveal" style="--d:2">
+        <div class="card-ic ic-blue"><svg viewBox="0 0 24 24"><path d="M4 7l8-4 8 4v10l-8 4-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></div>
+        <h3>Estoque automático</h3>
+        <p>Cada venda baixa o estoque e você recebe alerta para repor.</p>
+      </article>
+
+      <article class="card reveal" style="--d:3">
+        <div class="card-ic ic-pink"><svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg></div>
+        <h3>Cupons e promoções</h3>
+        <p>Primeira compra, aniversário, frete grátis acima de um valor.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-ic ic-orange"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+        <h3>Entrega do seu jeito</h3>
+        <p>Frete por CEP com Correios e transportadoras, retirada na loja ou entrega própria.</p>
+      </article>
+
+      <article class="card reveal" style="--d:1">
+        <div class="card-ic ic-green"><svg viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></svg></div>
+        <h3>Avisos no WhatsApp</h3>
+        <p>Pedido confirmado, pago e enviado: o cliente fica sabendo de tudo.</p>
+      </article>
+
+      <article class="card card-wide card-dark reveal" style="--d:2">
+        <div class="cw-text">
+          <div class="card-ic ic-violet"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg></div>
+          <h3>Recupere carrinhos abandonados</h3>
+          <p>A Buy+ guarda o carrinho e envia um lembrete com cupom para trazer o cliente de volta.</p>
+        </div>
+        <div class="cart-msg" aria-hidden="true">
+          <p>Oi, Mariana! Você esqueceu um item na sacola.</p>
+          <p class="cm-coupon">Use <b>VOLTA10</b> e ganhe 10% off</p>
+        </div>
+      </article>
+
+      <article class="card reveal" style="--d:3">
+        <div class="card-ic ic-blue"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
+        <h3>Google e Instagram</h3>
+        <p>Páginas otimizadas para busca e catálogo integrado às redes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEGMENTOS ================= -->
+<section class="section segs" id="segmentos">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="pill pill-soft reveal">Segmentos</p>
+      <h2 class="reveal" style="--d:1">Se dá pra vender, <span class="grad-text">dá pra vender na Buy+</span></h2>
+      <p class="sec-sub reveal" style="--d:2">Uma plataforma ampla, feita para qualquer tipo de negócio: de quem está começando no Instagram a quem já tem loja física e quer vender para o Brasil todo.</p>
+    </div>
+    <ul class="seg-grid">
+      <li class="seg-tile reveal" style="--d:0;--c:#2B2EE6"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M8 3l-5 4 3 4 2-1v11h8V10l2 1 3-4-5-4a4 4 0 01-8 0z"/></svg></span>Moda e acessórios</li>
+      <li class="seg-tile reveal" style="--d:1;--c:#E11D74"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M9 3h6v5H9z"/><path d="M8 8h8l1 13H7z"/></svg></span>Beleza e cosméticos</li>
+      <li class="seg-tile reveal" style="--d:2;--c:#F97316"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M5 8h12v5a6 6 0 01-12 0z"/><path d="M17 9h2a2 2 0 010 4h-2"/><path d="M8 2v3M12 2v3"/></svg></span>Alimentos e bebidas</li>
+      <li class="seg-tile reveal" style="--d:3;--c:#111827"><span class="seg-ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>Eletrônicos</li>
+      <li class="seg-tile reveal" style="--d:0;--c:#0E9F6E"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>Casa e decoração</li>
+      <li class="seg-tile reveal" style="--d:1;--c:#B45309"><span class="seg-ic"><svg viewBox="0 0 24 24"><circle cx="5" cy="10" r="2"/><circle cx="9" cy="5" r="2"/><circle cx="15" cy="5" r="2"/><circle cx="19" cy="10" r="2"/><path d="M8 17c0-3 2-5 4-5s4 2 4 5-2 4-4 4-4-1-4-4z"/></svg></span>Pet shop</li>
+      <li class="seg-tile reveal" style="--d:2;--c:#0891B2"><span class="seg-ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M12 11v6M9 14h6"/></svg></span>Saúde e farmácia</li>
+      <li class="seg-tile reveal" style="--d:3;--c:#DC2626"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M6 8v8M18 8v8M3 10v4M21 10v4M6 12h12"/></svg></span>Esporte e fitness</li>
+      <li class="seg-tile reveal" style="--d:0;--c:#7422F1"><span class="seg-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 14l-2 7h10l-2-7"/><circle cx="10.3" cy="8.5" r=".5"/><circle cx="13.7" cy="8.5" r=".5"/></svg></span>Infantil e brinquedos</li>
+      <li class="seg-tile reveal" style="--d:1;--c:#CA8A04"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M12 21L8 9l4-6 4 6z"/></svg></span>Joias e relógios</li>
+      <li class="seg-tile reveal" style="--d:2;--c:#4F46E5"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M4 4h6a3 3 0 013 3v13a2 2 0 00-2-2H4z"/><path d="M20 4h-6a3 3 0 00-1 .2"/><path d="M20 4v14h-7"/></svg></span>Papelaria e livros</li>
+      <li class="seg-tile reveal" style="--d:3;--c:#DB2777"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 110-18c5 0 9 3.6 9 8 0 2.5-2 4-4.5 4H15a2 2 0 00-1.5 3.3A2 2 0 0112 21z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg></span>Artesanato</li>
+      <li class="seg-tile reveal" style="--d:0;--c:#475569"><span class="seg-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></span>Autopeças</li>
+      <li class="seg-tile reveal" style="--d:1;--c:#9A3412"><span class="seg-ic"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-6 8 6v10"/><path d="M9 20v-5h6v5"/></svg></span>Materiais de construção</li>
+      <li class="seg-tile reveal" style="--d:2;--c:#BE185D"><span class="seg-ic"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v9h14v-9"/><path d="M12 8C9 8 7 3 10 3s2 5 2 5 0-5 3-5 1 5-3 5"/></svg></span>Flores e presentes</li>
+      <li class="seg-tile reveal" style="--d:3;--c:#16A34A"><span class="seg-ic"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="4" rx="1"/><path d="M6 7h12v14H6z"/><path d="M9 13h6"/></svg></span>Suplementos</li>
+    </ul>
+    <div class="seg-fits">
+      <div class="fit reveal"><b>Variações</b><p>Tamanho, cor, voltagem, sabor ou fragrância, cada uma com preço, foto e estoque.</p></div>
+      <div class="fit reveal" style="--d:1"><b>Produtos físicos e kits</b><p>Venda unidades, combos, kits de presente e produtos sob encomenda.</p></div>
+      <div class="fit reveal" style="--d:2"><b>Varejo e atacado</b><p>Preços por quantidade e pedido mínimo para quem também vende para revenda.</p></div>
+      <div class="fit reveal" style="--d:3"><b>Loja física + online</b><p>Retirada no balcão e entrega no bairro para quem já tem ponto de venda.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO INTERATIVA ================= -->
+<section class="section demo" id="demo">
+  <div class="container demo-wrap">
+    <div class="demo-panel">
+      <p class="pill pill-white reveal">Teste agora, sem cadastro</p>
+      <h2 class="reveal" style="--d:1">Monte a sua loja em segundos</h2>
+      <p class="demo-sub reveal" style="--d:2">Mexa nos controles e veja a loja ganhar vida no celular. É assim que funciona no painel da Buy+.</p>
+
+      <div class="demo-mini" id="demoMini" aria-live="polite">
+        <img id="miniImg" src="assets/photos/denim-jacket-designed-arthur-mcgee.webp" alt="">
+        <div class="mini-info">
+          <strong data-bind="name">Sua Loja</strong>
+          <span id="miniName">Jaqueta jeans manga curta</span>
+          <b id="miniPix">R$ 218,41 no Pix</b>
+          <em id="miniCoupon">Cupom 10% off</em>
+        </div>
+      </div>
+
+      <div class="ctrl reveal" style="--d:3">
+        <label for="storeName">Nome da loja</label>
+        <input id="storeName" type="text" maxlength="22" value="" placeholder="Digite o nome da sua loja" autocomplete="off">
+      </div>
+
+      <div class="ctrl reveal" style="--d:3">
+        <span class="ctrl-label" id="segL">O que você vende</span>
+        <div class="chips" role="radiogroup" aria-labelledby="segL">
+          <button type="button" role="radio" aria-checked="true" data-seg="moda">Moda</button>
+          <button type="button" role="radio" aria-checked="false" data-seg="cafe">Alimentos</button>
+          <button type="button" role="radio" aria-checked="false" data-seg="beleza">Beleza</button>
+        </div>
+      </div>
+
+      <div class="ctrl reveal" style="--d:4">
+        <span class="ctrl-label" id="colL">Cor da marca</span>
+        <div class="colors" role="radiogroup" aria-labelledby="colL">
+          <button type="button" role="radio" aria-checked="true" data-color="#2B2EE6" style="--c:#2B2EE6" aria-label="Azul"></button>
+          <button type="button" role="radio" aria-checked="false" data-color="#7422F1" style="--c:#7422F1" aria-label="Roxo"></button>
+          <button type="button" role="radio" aria-checked="false" data-color="#0E9F6E" style="--c:#0E9F6E" aria-label="Verde"></button>
+          <button type="button" role="radio" aria-checked="false" data-color="#F97316" style="--c:#F97316" aria-label="Laranja"></button>
+          <button type="button" role="radio" aria-checked="false" data-color="#E11D74" style="--c:#E11D74" aria-label="Rosa"></button>
+          <button type="button" role="radio" aria-checked="false" data-color="#111827" style="--c:#111827" aria-label="Preto"></button>
+        </div>
+      </div>
+
+      <div class="ctrl-2 reveal" style="--d:4">
+        <div class="ctrl">
+          <label for="pix">Desconto no Pix <b><output id="pixOut">5</output>%</b></label>
+          <input id="pix" type="range" min="0" max="15" value="5">
+        </div>
+        <div class="ctrl">
+          <label for="coupon">Cupom de boas-vindas <b><output id="couponOut">10</output>%</b></label>
+          <input id="coupon" type="range" min="0" max="30" step="5" value="10">
+        </div>
+      </div>
+
+      <a class="btn btn-white btn-lg reveal" style="--d:5" data-cta href="#comecar">Quero essa loja de verdade</a>
+    </div>
+
+    <div class="demo-phone-wrap reveal-up" style="--d:2">
+      <div class="phone phone-lg">
+        <div class="phone-notch"></div>
+        <div class="phone-screen app" id="app" style="--brand:#2B2EE6">
+          <div class="app-head"><strong data-bind="name">Sua Loja</strong><span class="app-cart" id="appCart"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg><b class="cart-n">0</b></span></div>
+          <p class="app-coupon" id="appCoupon">Cupom <b>BEMVINDO<span data-bind="pct">10</span></b>: <span data-bind="pct">10</span>% off na 1ª compra</p>
+          <div class="app-hero">
+            <img id="appImg" src="assets/photos/denim-jacket-designed-arthur-mcgee.webp" width="877" height="1024" alt="Produto em destaque">
+          </div>
+          <p class="app-cat" data-bind="seg">Moda</p>
+          <p class="app-name" id="appName">Jaqueta jeans manga curta</p>
+          <p class="app-price" id="appPrice">R$ 229,90</p>
+          <p class="app-pix" id="appPix">R$ 218,41 no Pix</p>
+          <p class="app-inst" id="appInst">ou 6x de R$ 38,32 sem juros</p>
+          <button type="button" class="app-buy" id="appBuy">Adicionar à sacola</button>
+          <div class="app-more" id="appMore"></div>
+        </div>
+      </div>
+      <div class="added" id="added" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="pill pill-soft reveal">Como funciona</p>
+      <h2 class="reveal" style="--d:1">Da ideia à <span class="grad-text">primeira venda</span> em 4 passos</h2>
+    </div>
+    <ol class="steps" id="steps">
+      <li class="step reveal"><span class="step-n">1</span><h3>Crie sua conta</h3><p>Nome da loja, CNPJ ou CPF e a conta para receber. Leva minutos.</p></li>
+      <li class="step reveal" style="--d:1"><span class="step-n">2</span><h3>Cadastre os produtos</h3><p>Fotos, preços, variações e estoque. Um a um ou por planilha.</p></li>
+      <li class="step reveal" style="--d:2"><span class="step-n">3</span><h3>Ative os pagamentos</h3><p>Pix, cartão e boleto com poucos cliques. O dinheiro cai na sua conta.</p></li>
+      <li class="step reveal" style="--d:3"><span class="step-n">4</span><h3>Venda e acompanhe</h3><p>Divulgue o link e acompanhe cada pedido pelo painel, até no celular.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= PAINEL ================= -->
+<section class="section painel" id="painel">
+  <span class="blob pb1" aria-hidden="true"></span><span class="blob pb2" aria-hidden="true"></span>
+  <div class="container painel-wrap">
+    <div class="painel-copy">
+      <p class="pill pill-glow reveal">Painel de vendas</p>
+      <h2 class="reveal" style="--d:1">Seu negócio inteiro <span class="grad-text-light">numa tela só</span></h2>
+      <p class="reveal" style="--d:2">Pedidos, pagamentos, estoque e clientes organizados. Você sabe o que vende, o que está parado e o que precisa repor.</p>
+      <ul class="ticks">
+        <li class="reveal" style="--d:3"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Pedidos com status: pago, separando, enviado</li>
+        <li class="reveal" style="--d:3"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Relatórios por dia, produto e forma de pagamento</li>
+        <li class="reveal" style="--d:4"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Etiquetas de envio e código de rastreio</li>
+        <li class="reveal" style="--d:4"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Acessos separados para a sua equipe</li>
+      </ul>
+    </div>
+
+    <div class="dash reveal-up" style="--d:2" id="dash" aria-label="Exemplo do painel da Buy+">
+      <div class="dash-top"><img src="assets/mark-white.png" width="287" height="400" alt=""><b>Painel da sua loja</b><span class="dash-date">Hoje</span></div>
+      <div class="dash-kpis">
+        <div><span>Pedidos</span><b data-count="21">21</b></div>
+        <div><span>Pagos no Pix</span><b data-count="14">14</b></div>
+        <div><span>A enviar</span><b data-count="6">6</b></div>
+      </div>
+      <div class="dash-chart">
+        <p>Pedidos nos últimos 7 dias</p>
+        <div class="bars">
+          <span style="--h:36%"><i>9</i><em>qua</em></span><span style="--h:56%"><i>14</i><em>qui</em></span><span style="--h:44%"><i>11</i><em>sex</em></span><span style="--h:72%"><i>18</i><em>sáb</em></span><span style="--h:64%"><i>16</i><em>dom</em></span><span style="--h:92%"><i>23</i><em>seg</em></span><span class="today" style="--h:84%"><i>21</i><em>hoje</em></span>
+        </div>
+      </div>
+      <div class="dash-orders">
+        <div><span>#1042 · Mariana Costa</span><em class="st-ok">Pago</em></div>
+        <div><span>#1041 · João Pereira</span><em class="st-wait">Separando</em></div>
+        <div><span>#1040 · Ana Souza</span><em class="st-ship">Enviado</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DÚVIDAS ================= -->
+<section class="section" id="duvidas">
+  <div class="container faq-wrap">
+    <div class="faq-head">
+      <p class="pill pill-soft reveal">Dúvidas</p>
+      <h2 class="reveal" style="--d:1">Perguntas frequentes</h2>
+      <p class="sec-sub reveal" style="--d:2">Não achou a sua? Fale com a gente no WhatsApp, respondemos rápido.</p>
+      <a class="btn btn-ghost reveal" style="--d:3" data-cta-talk href="#comecar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></svg>Falar com a equipe</a>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Preciso saber programar?</summary><div class="faq-a"><p>Não. Você monta a loja pelo painel, escolhendo cores, fotos e textos. Se você sabe usar o Instagram, sabe usar a Buy+.</p></div></details>
+      <details class="reveal"><summary>A Buy+ faz as entregas?</summary><div class="faq-a"><p>Não temos frota própria de entregadores. Você escolhe como entregar: Correios ou transportadora com frete calculado pelo CEP, retirada no seu endereço, ou entrega com a sua equipe, com taxa por bairro.</p></div></details>
+      <details class="reveal"><summary>Como recebo o dinheiro das vendas?</summary><div class="faq-a"><p>Pelo checkout integrado, com Pix, cartão e boleto. O valor cai na conta cadastrada no painel e cada pagamento aparece no pedido.</p></div></details>
+      <details class="reveal"><summary>Posso usar meu próprio domínio?</summary><div class="faq-a"><p>Pode. Conecte o endereço que você já tem ou registre um novo. A loja abre nele com certificado de segurança.</p></div></details>
+      <details class="reveal"><summary>Funciona bem no celular?</summary><div class="faq-a"><p>A loja é feita primeiro para o celular, onde acontece a maior parte das compras. O painel também funciona no celular.</p></div></details>
+      <details class="reveal"><summary>Consigo vender produtos com variações?</summary><div class="faq-a"><p>Sim. Tamanho, cor, voltagem ou sabor, cada variação com preço, foto e estoque próprios.</p></div></details>
+      <details class="reveal"><summary>Já vendo pelo Instagram. Faz sentido?</summary><div class="faq-a"><p>Faz muito. Em vez de combinar tudo na conversa, você manda um link com pagamento e frete prontos, e o pedido já entra organizado.</p></div></details>
+      <details class="reveal"><summary>Tenho ajuda para começar?</summary><div class="faq-a"><p>Tem. Nossa equipe atende em português e ajuda você a publicar a loja e cadastrar os primeiros produtos.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="section cta-sec" id="comecar">
+  <div class="container">
+    <div class="cta-box reveal-up">
+      <span class="blob cb1" aria-hidden="true"></span><span class="blob cb2" aria-hidden="true"></span>
+      <img class="cta-mark" src="assets/mark-white.png" width="287" height="400" alt="" aria-hidden="true">
+      <h2>A sua loja pode estar no ar esta semana</h2>
+      <p>Chama a gente no WhatsApp. A nossa equipe ajuda você a montar e publicar a sua loja.</p>
+      <div class="cta-btns">
+        <a class="btn btn-white btn-lg" data-cta href="#comecar">Criar minha loja agora <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-outline-white btn-lg" data-cta-talk href="#comecar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></svg>(91) 98479-1651</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" width="659" height="240" alt="Buy+">
+      <p>A plataforma de e-commerce completa para quem quer vender mais com a própria marca. Um produto LM Soluções.</p>
+    </div>
+    <div>
+      <h3>Plataforma</h3>
+      <a href="#recursos">Recursos</a><a href="#segmentos">Segmentos</a><a href="#demo">Teste agora</a><a href="#painel">Painel</a>
+    </div>
+    <div>
+      <h3>Ajuda</h3>
+      <a href="#como-funciona">Como funciona</a><a href="#duvidas">Dúvidas</a><a data-cta-talk href="#comecar">Falar com a equipe</a>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <a data-cta-talk href="#comecar">WhatsApp (91) 98479-1651</a>
+      <span>LM Soluções</span>
+    </div>
+  </div>
+  <div class="container lm-band">
+    <a class="lm-card" href="https://wa.me/5591984791651?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20da%20Buy%2B%20e%20quero%20falar%20com%20a%20LM%20Solu%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="LM Soluções, desenvolvedora da Buy+">
+      <img src="assets/lm-solucoes.png" width="600" height="544" alt="LM Soluções · Tecnologia que impulsiona" loading="lazy">
+      <div>
+        <p class="lm-kicker">Buy+ é um produto</p>
+        <p class="lm-name">LM Soluções</p>
+        <p class="lm-text">Tecnologia que impulsiona o seu negócio. Quer um projeto assim? Chama a gente.</p>
+        <span class="lm-wa"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.7a10.7 10.7 0 01-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1116 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 01-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.4 6.4 0 001.3 3.4 14.7 14.7 0 005.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 002.2-1.6 2.8 2.8 0 00.2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg><span>WhatsApp <b>(91) 98479-1651</b></span></span>
+      </div>
+    </a>
+  </div>
+  <div class="container footer-legal">
+    <p>© <span id="year">2026</span> Buy+ · LM Soluções. Todos os direitos reservados.</p>
+    <p>Fotos da demonstração: domínio público (CC0) via rawpixel, Wikimedia Commons e StockSnap.</p>
+  </div>
+</footer>
+
+<a class="wa-float" data-cta-talk href="#comecar" aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.7a10.7 10.7 0 01-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1116 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 01-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.4 6.4 0 001.3 3.4 14.7 14.7 0 005.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 002.2-1.6 2.8 2.8 0 00.2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg></a>
+
+<script src="app.js?v=4" defer></script>
+</body>
+</html>
